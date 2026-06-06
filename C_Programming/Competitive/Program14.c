@@ -1,0 +1,29 @@
+///     Accept one Character from User and Convert its Case
+///     INPUT : a
+///     OUTPUT : A
+
+#include<stdio.h>
+
+void DisplayConvert(char cValue)
+{
+    if((cValue >= 'a') && (cValue <= 'z'))
+    {
+        printf("%c\n", cValue - 32);
+    }
+    else if((cValue >= 'A') && (cValue <= 'Z'))
+    {
+        printf("%c\n", cValue + 32);
+    }
+}
+
+int main()
+{
+    char cValue = '\0';
+
+    printf("Enter character\n");
+    scanf("%c", &cValue);
+
+    DisplayConvert(cValue);
+
+    return 0;
+}
